@@ -21,10 +21,16 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "mongoose": "^5.4.4",
+<<<<<<< HEAD
     "morgan": "^1.9.1"
 
+=======
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+>>>>>>> e5b51bbc497828596bd9a6b131d47994c2ac0fa0
   }
 }
