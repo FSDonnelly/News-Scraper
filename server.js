@@ -4,7 +4,7 @@ var mongoose = require("mongoose");
 
 var PORT = process.env.PORT || 3000;
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/mongoHeadlines";
 
 var app = express();
 
@@ -15,8 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI, {
- // useNewUrlParser: true
+mongoose.connect(MONGODB_URI  || "mongodb://localhost:27017/mongoHeadlines", {
+ useNewUrlParser: true
 });
 
 // db.Headline.create();
