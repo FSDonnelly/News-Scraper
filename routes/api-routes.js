@@ -1,6 +1,7 @@
 const cheerio = require("cheerio");
 const axios = require("axios");
-const db = require("../models")
+const db = require("../models");
+const request = require("request")
 
 module.exports = function(app) {
 
@@ -26,7 +27,7 @@ module.exports = function(app) {
     // post
     app.post("/api/scrape", function(req, res) {
 
-        axios.get("http://www.npr.org/sections/news/", function(error, response, html) {
+        request.get("http://www.npr.org/sections/news/", function(error, response, html) {
             console.log(response);
             const $ = cheerio.load(html);
 
