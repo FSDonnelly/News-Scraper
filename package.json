@@ -25,12 +25,6 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "mongoose": "^5.4.4",
-<<<<<<< HEAD
     "morgan": "^1.9.1"
-
-=======
-    "morgan": "^1.9.1",
-    "request": "^2.88.0"
->>>>>>> e5b51bbc497828596bd9a6b131d47994c2ac0fa0
   }
 }

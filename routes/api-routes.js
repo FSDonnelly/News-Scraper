@@ -1,10 +1,6 @@
 const cheerio = require("cheerio");
 const axios = require("axios");
 const db = require("../models");
-<<<<<<< HEAD
-=======
-const request = require("request")
->>>>>>> e5b51bbc497828596bd9a6b131d47994c2ac0fa0
 
 
 module.exports = function (app) {
