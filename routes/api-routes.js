@@ -25,7 +25,7 @@ module.exports = function(app) {
     });
 
     // post
-    app.get("/api/scrape", function(req, res) {
+    app.post("/api/scrape", function(req, res) {
 
         request.get("http://www.npr.org/sections/news/", function(error, response, html) {
             console.log(response);
