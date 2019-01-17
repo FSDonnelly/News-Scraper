@@ -15,8 +15,8 @@ $(function() {
 
           $.ajax("/api/scrape", {
               type: "POST"
-          }).then(function(response) {
-
+          }).then(function(response, error) {
+            console.log(error);
 
               $.ajax("/api/reduce", {
                   type: "DELETE"
